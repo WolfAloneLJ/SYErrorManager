@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SYNetWorkErrorView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="networkErrorTip.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qpx-6z-Sqd">
+                    <rect key="frame" x="20" y="9.5" width="24" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="Asr-Js-Irn"/>
+                        <constraint firstAttribute="height" constant="16" id="cLR-0U-7l2"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="networkErrorArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ba-Y7-ZcR">
+                    <rect key="frame" x="338" y="9.5" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="Sfi-PM-Hgd"/>
+                        <constraint firstAttribute="width" constant="16" id="sDq-9F-Ujp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网络异常, 请检查网络设置是否正确!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="bMc-BC-vVT">
+                    <rect key="frame" x="46" y="7" width="226.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Bg1-cY-ei1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rq8-QW-9yO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="doPressDetail:" destination="iN0-l3-epB" eventType="touchUpInside" id="Y9s-fY-upR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.82530381944444442" green="0.89404296875" blue="0.74516867929034758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5ba-Y7-ZcR" secondAttribute="trailing" constant="21" id="DoM-sS-hQ0"/>
+                <constraint firstItem="Qpx-6z-Sqd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Hnr-uW-iGp"/>
+                <constraint firstItem="bMc-BC-vVT" firstAttribute="leading" secondItem="Qpx-6z-Sqd" secondAttribute="trailing" constant="2" id="MuB-UU-GXa"/>
+                <constraint firstItem="bMc-BC-vVT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UAo-uG-1WO"/>
+                <constraint firstItem="rq8-QW-9yO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="V33-ot-svN"/>
+                <constraint firstItem="Qpx-6z-Sqd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eOY-EI-s4Z"/>
+                <constraint firstItem="rq8-QW-9yO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gBF-XZ-ohj"/>
+                <constraint firstAttribute="trailing" secondItem="rq8-QW-9yO" secondAttribute="trailing" id="kib-Pf-caj"/>
+                <constraint firstItem="5ba-Y7-ZcR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="o6I-KT-ANd"/>
+                <constraint firstAttribute="bottom" secondItem="rq8-QW-9yO" secondAttribute="bottom" id="oWm-eX-Fbi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="errorMessageLabel" destination="bMc-BC-vVT" id="pap-uA-Pi3"/>
+                <outlet property="imgvAlert" destination="Qpx-6z-Sqd" id="iNN-KD-Sa7"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="networkErrorArrow.png" width="16" height="16"/>
+        <image name="networkErrorTip.png" width="24" height="16"/>
+    </resources>
+</document>

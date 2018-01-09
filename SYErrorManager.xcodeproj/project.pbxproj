@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BAD11FA200335B2007A4B48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD11F9200335B2007A4B48 /* AppDelegate.m */; };
+		6BAD11FD200335B2007A4B48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD11FC200335B2007A4B48 /* ViewController.m */; };
+		6BAD1200200335B2007A4B48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAD11FE200335B2007A4B48 /* Main.storyboard */; };
+		6BAD1202200335B2007A4B48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BAD1201200335B2007A4B48 /* Assets.xcassets */; };
+		6BAD1205200335B2007A4B48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAD1203200335B2007A4B48 /* LaunchScreen.storyboard */; };
+		6BAD1208200335B2007A4B48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD1207200335B2007A4B48 /* main.m */; };
+		6BAD12112003370A007A4B48 /* SYBaseRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD12102003370A007A4B48 /* SYBaseRequestModel.m */; };
+		6BAD121720033835007A4B48 /* SYHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD121620033835007A4B48 /* SYHTTPSessionManager.m */; };
+		6BAD121B20035126007A4B48 /* UIViewController+SYErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD121A20035126007A4B48 /* UIViewController+SYErrorManager.m */; };
+		6BAD121E200351A9007A4B48 /* SYErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD121D200351A9007A4B48 /* SYErrorManager.m */; };
+		6BAD1222200352BF007A4B48 /* SYNetWorkErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD1220200352BF007A4B48 /* SYNetWorkErrorView.m */; };
+		6BAD1223200352BF007A4B48 /* SYNetWorkErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BAD1221200352BF007A4B48 /* SYNetWorkErrorView.xib */; };
+		6BBED07120035A5A00E376C3 /* networkErrorTip.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BBED06F20035A5A00E376C3 /* networkErrorTip.png */; };
+		6BBED07220035A5A00E376C3 /* networkErrorArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BBED07020035A5A00E376C3 /* networkErrorArrow.png */; };
+		6BBED07820035BAC00E376C3 /* SYNetworkErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBED07620035BAC00E376C3 /* SYNetworkErrorViewController.m */; };
+		6BBED07D20035D1D00E376C3 /* SYNetworkErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BBED07C20035D1D00E376C3 /* SYNetworkErrorViewController.xib */; };
+		6BBED08020036ADA00E376C3 /* SYNetworkErrorConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBED07F20036ADA00E376C3 /* SYNetworkErrorConfig.m */; };
+		6BBED0832003969300E376C3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBED0822003969300E376C3 /* DetailViewController.m */; };
+		91B5C7AF8A28B7A1B8718A99 /* libPods-SYErrorManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C38FB47FBA1CB44CEB0750 /* libPods-SYErrorManager.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28C38FB47FBA1CB44CEB0750 /* libPods-SYErrorManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SYErrorManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BAD11F5200335B2007A4B48 /* SYErrorManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYErrorManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BAD11F8200335B2007A4B48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6BAD11F9200335B2007A4B48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6BAD11FB200335B2007A4B48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6BAD11FC200335B2007A4B48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6BAD11FF200335B2007A4B48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BAD1201200335B2007A4B48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BAD1204200335B2007A4B48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BAD1206200335B2007A4B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BAD1207200335B2007A4B48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6BAD120F2003370A007A4B48 /* SYBaseRequestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYBaseRequestModel.h; sourceTree = "<group>"; };
+		6BAD12102003370A007A4B48 /* SYBaseRequestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYBaseRequestModel.m; sourceTree = "<group>"; };
+		6BAD121220033737007A4B48 /* SYConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYConfig.h; sourceTree = "<group>"; };
+		6BAD121520033835007A4B48 /* SYHTTPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYHTTPSessionManager.h; sourceTree = "<group>"; };
+		6BAD121620033835007A4B48 /* SYHTTPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYHTTPSessionManager.m; sourceTree = "<group>"; };
+		6BAD121920035126007A4B48 /* UIViewController+SYErrorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SYErrorManager.h"; sourceTree = "<group>"; };
+		6BAD121A20035126007A4B48 /* UIViewController+SYErrorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SYErrorManager.m"; sourceTree = "<group>"; };
+		6BAD121C200351A9007A4B48 /* SYErrorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYErrorManager.h; sourceTree = "<group>"; };
+		6BAD121D200351A9007A4B48 /* SYErrorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYErrorManager.m; sourceTree = "<group>"; };
+		6BAD121F200352BE007A4B48 /* SYNetWorkErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNetWorkErrorView.h; sourceTree = "<group>"; };
+		6BAD1220200352BF007A4B48 /* SYNetWorkErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNetWorkErrorView.m; sourceTree = "<group>"; };
+		6BAD1221200352BF007A4B48 /* SYNetWorkErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYNetWorkErrorView.xib; sourceTree = "<group>"; };
+		6BBED06F20035A5A00E376C3 /* networkErrorTip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = networkErrorTip.png; sourceTree = "<group>"; };
+		6BBED07020035A5A00E376C3 /* networkErrorArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = networkErrorArrow.png; sourceTree = "<group>"; };
+		6BBED07420035BAC00E376C3 /* SYNetworkErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNetworkErrorViewController.h; sourceTree = "<group>"; };
+		6BBED07620035BAC00E376C3 /* SYNetworkErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNetworkErrorViewController.m; sourceTree = "<group>"; };
+		6BBED07C20035D1D00E376C3 /* SYNetworkErrorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SYNetworkErrorViewController.xib; sourceTree = "<group>"; };
+		6BBED07E20036ADA00E376C3 /* SYNetworkErrorConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYNetworkErrorConfig.h; sourceTree = "<group>"; };
+		6BBED07F20036ADA00E376C3 /* SYNetworkErrorConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYNetworkErrorConfig.m; sourceTree = "<group>"; };
+		6BBED0812003969300E376C3 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		6BBED0822003969300E376C3 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		702710B6DD8A2427E9053A51 /* Pods-SYErrorManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYErrorManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYErrorManager/Pods-SYErrorManager.release.xcconfig"; sourceTree = "<group>"; };
+		79254E5F93592EB6636112F1 /* Pods-SYErrorManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYErrorManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYErrorManager/Pods-SYErrorManager.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BAD11F2200335B2007A4B48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B5C7AF8A28B7A1B8718A99 /* libPods-SYErrorManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0196C18039EDE0C8895A6F5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28C38FB47FBA1CB44CEB0750 /* libPods-SYErrorManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E0959A1512F55317E0D5519 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79254E5F93592EB6636112F1 /* Pods-SYErrorManager.debug.xcconfig */,
+				702710B6DD8A2427E9053A51 /* Pods-SYErrorManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6BAD11EC200335B2007A4B48 = {
+			isa = PBXGroup;
+			children = (
+				6BAD11F7200335B2007A4B48 /* SYErrorManager */,
+				6BAD11F6200335B2007A4B48 /* Products */,
+				3E0959A1512F55317E0D5519 /* Pods */,
+				0196C18039EDE0C8895A6F5F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6BAD11F6200335B2007A4B48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BAD11F5200335B2007A4B48 /* SYErrorManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BAD11F7200335B2007A4B48 /* SYErrorManager */ = {
+			isa = PBXGroup;
+			children = (
+				6BAD121820033982007A4B48 /* SYErrorManager */,
+				6BAD120E20033698007A4B48 /* BaseRequest */,
+				6BAD11F8200335B2007A4B48 /* AppDelegate.h */,
+				6BAD11F9200335B2007A4B48 /* AppDelegate.m */,
+				6BAD11FB200335B2007A4B48 /* ViewController.h */,
+				6BAD11FC200335B2007A4B48 /* ViewController.m */,
+				6BBED0812003969300E376C3 /* DetailViewController.h */,
+				6BBED0822003969300E376C3 /* DetailViewController.m */,
+				6BAD11FE200335B2007A4B48 /* Main.storyboard */,
+				6BAD1201200335B2007A4B48 /* Assets.xcassets */,
+				6BAD1203200335B2007A4B48 /* LaunchScreen.storyboard */,
+				6BAD1206200335B2007A4B48 /* Info.plist */,
+				6BAD1207200335B2007A4B48 /* main.m */,
+			);
+			path = SYErrorManager;
+			sourceTree = "<group>";
+		};
+		6BAD120E20033698007A4B48 /* BaseRequest */ = {
+			isa = PBXGroup;
+			children = (
+				6BAD120F2003370A007A4B48 /* SYBaseRequestModel.h */,
+				6BAD12102003370A007A4B48 /* SYBaseRequestModel.m */,
+				6BAD121220033737007A4B48 /* SYConfig.h */,
+				6BAD121520033835007A4B48 /* SYHTTPSessionManager.h */,
+				6BAD121620033835007A4B48 /* SYHTTPSessionManager.m */,
+			);
+			path = BaseRequest;
+			sourceTree = "<group>";
+		};
+		6BAD121820033982007A4B48 /* SYErrorManager */ = {
+			isa = PBXGroup;
+			children = (
+				6BBED07320035B5400E376C3 /* ViewController */,
+				6BAD122420035423007A4B48 /* View */,
+				6BAD121920035126007A4B48 /* UIViewController+SYErrorManager.h */,
+				6BAD121A20035126007A4B48 /* UIViewController+SYErrorManager.m */,
+				6BAD121C200351A9007A4B48 /* SYErrorManager.h */,
+				6BAD121D200351A9007A4B48 /* SYErrorManager.m */,
+				6BBED07E20036ADA00E376C3 /* SYNetworkErrorConfig.h */,
+				6BBED07F20036ADA00E376C3 /* SYNetworkErrorConfig.m */,
+			);
+			path = SYErrorManager;
+			sourceTree = "<group>";
+		};
+		6BAD122420035423007A4B48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BBED07020035A5A00E376C3 /* networkErrorArrow.png */,
+				6BBED06F20035A5A00E376C3 /* networkErrorTip.png */,
+				6BAD121F200352BE007A4B48 /* SYNetWorkErrorView.h */,
+				6BAD1220200352BF007A4B48 /* SYNetWorkErrorView.m */,
+				6BAD1221200352BF007A4B48 /* SYNetWorkErrorView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BBED07320035B5400E376C3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6BBED07420035BAC00E376C3 /* SYNetworkErrorViewController.h */,
+				6BBED07620035BAC00E376C3 /* SYNetworkErrorViewController.m */,
+				6BBED07C20035D1D00E376C3 /* SYNetworkErrorViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BAD11F4200335B2007A4B48 /* SYErrorManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BAD120B200335B2007A4B48 /* Build configuration list for PBXNativeTarget "SYErrorManager" */;
+			buildPhases = (
+				C308F8218E514CF67DBF1B93 /* [CP] Check Pods Manifest.lock */,
+				6BAD11F1200335B2007A4B48 /* Sources */,
+				6BAD11F2200335B2007A4B48 /* Frameworks */,
+				6BAD11F3200335B2007A4B48 /* Resources */,
+				42792EB6D7CF71D536D45E86 /* [CP] Embed Pods Frameworks */,
+				9266EFF0D60DB366637B71E0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYErrorManager;
+			productName = SYErrorManager;
+			productReference = 6BAD11F5200335B2007A4B48 /* SYErrorManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BAD11ED200335B2007A4B48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = sandboy;
+				TargetAttributes = {
+					6BAD11F4200335B2007A4B48 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6BAD11F0200335B2007A4B48 /* Build configuration list for PBXProject "SYErrorManager" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BAD11EC200335B2007A4B48;
+			productRefGroup = 6BAD11F6200335B2007A4B48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BAD11F4200335B2007A4B48 /* SYErrorManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BAD11F3200335B2007A4B48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBED07D20035D1D00E376C3 /* SYNetworkErrorViewController.xib in Resources */,
+				6BAD1223200352BF007A4B48 /* SYNetWorkErrorView.xib in Resources */,
+				6BAD1205200335B2007A4B48 /* LaunchScreen.storyboard in Resources */,
+				6BBED07120035A5A00E376C3 /* networkErrorTip.png in Resources */,
+				6BBED07220035A5A00E376C3 /* networkErrorArrow.png in Resources */,
+				6BAD1202200335B2007A4B48 /* Assets.xcassets in Resources */,
+				6BAD1200200335B2007A4B48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42792EB6D7CF71D536D45E86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SYErrorManager/Pods-SYErrorManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9266EFF0D60DB366637B71E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SYErrorManager/Pods-SYErrorManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C308F8218E514CF67DBF1B93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BAD11F1200335B2007A4B48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BAD12112003370A007A4B48 /* SYBaseRequestModel.m in Sources */,
+				6BAD11FD200335B2007A4B48 /* ViewController.m in Sources */,
+				6BAD1208200335B2007A4B48 /* main.m in Sources */,
+				6BAD121E200351A9007A4B48 /* SYErrorManager.m in Sources */,
+				6BBED07820035BAC00E376C3 /* SYNetworkErrorViewController.m in Sources */,
+				6BAD1222200352BF007A4B48 /* SYNetWorkErrorView.m in Sources */,
+				6BAD11FA200335B2007A4B48 /* AppDelegate.m in Sources */,
+				6BBED0832003969300E376C3 /* DetailViewController.m in Sources */,
+				6BAD121720033835007A4B48 /* SYHTTPSessionManager.m in Sources */,
+				6BAD121B20035126007A4B48 /* UIViewController+SYErrorManager.m in Sources */,
+				6BBED08020036ADA00E376C3 /* SYNetworkErrorConfig.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6BAD11FE200335B2007A4B48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BAD11FF200335B2007A4B48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BAD1203200335B2007A4B48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BAD1204200335B2007A4B48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BAD1209200335B2007A4B48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6BAD120A200335B2007A4B48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BAD120C200335B2007A4B48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79254E5F93592EB6636112F1 /* Pods-SYErrorManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4VMUYDDKC;
+				INFOPLIST_FILE = SYErrorManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ytzy.SYErrorManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6BAD120D200335B2007A4B48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 702710B6DD8A2427E9053A51 /* Pods-SYErrorManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4VMUYDDKC;
+				INFOPLIST_FILE = SYErrorManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ytzy.SYErrorManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BAD11F0200335B2007A4B48 /* Build configuration list for PBXProject "SYErrorManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BAD1209200335B2007A4B48 /* Debug */,
+				6BAD120A200335B2007A4B48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BAD120B200335B2007A4B48 /* Build configuration list for PBXNativeTarget "SYErrorManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BAD120C200335B2007A4B48 /* Debug */,
+				6BAD120D200335B2007A4B48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BAD11ED200335B2007A4B48 /* Project object */;
+}
